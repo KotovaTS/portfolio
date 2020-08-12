@@ -27,6 +27,70 @@ body{
 .dark .steps-item:first-child{
     border-top: 1px solid #F3F2F0;
 }
+.dark .nav-info .nav-item::before{
+    background-color: rgba(243, 242, 240, 0.5);
+    position: absolute;
+    left: 0;
+    top: calc(50%-12px);
+}
+.dark .nav-social .nav-item::before{
+    background-color: rgba(243, 242, 240, 0.5);
+    position: absolute;
+    left: 0;
+    top: calc(50%-12px);
+}
+.dark .project:hover{
+    border-bottom: 2px solid #F3F2F0;
+}
+.dark .project-img{
+    width: 16px;
+    height: 12px;
+    display: block;
+    background-image:url(../img/arrow.svg); 
+    margin-left: 15px;
+}
+.dark .gradient{
+    background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%); 
+}
+.dark .nav-tabs-item.ui-state-active .nav-tabs-link{
+    color: #F3F2F0;
+    border-bottom: 1px solid #F3F2F0;
+}
+.dark .nav-tabs-link{
+    color: rgba(243, 242, 240, 0.5);
+}
+.dark .work{
+    border-bottom: 1px solid #F3F2F0;
+}
+.dark .advantages {
+    border-top: 1px solid #F3F2F0;
+}
+.dark .advantages-image path{
+    fill: #F3F2F0;
+}
+.dark .tech-item{
+    border-bottom: 1px solid rgba(243, 242, 240, 0.3);
+    border-right: 1px solid rgba(243, 242, 240, 0.3);
+}
+.dark .html, .css, .js, .jquery{
+    border-top: 1px solid rgba(243, 242, 240, 0.3);
+}
+.dark .html, .bootstrap{
+    border-left: 1px solid rgba(243, 242, 240, 0.3);
+}
+.dark .tarif-item{
+    border-bottom: 1px solid #F3F2F0;
+}
+.dark .tarif-title{
+    border-bottom: 1px solid #F3F2F0;
+}
+.dark .tarif-description{
+    border-bottom: 1px solid #F3F2F0;
+}
+.dark .form-item{
+    border-top: 1px solid #F3F2F0;
+    z-index: 3;
+}
 .light{
     background-color: #F3F2F0;
     color: #010101;
@@ -44,13 +108,77 @@ body{
     fill: #D40000;
 }
 .light .social, 
-.light .steps-item
+.light .steps-item,
 .light .about-title,
 .light .about-description{
     border-bottom: 1px solid #010101;
 }
 .light .steps-item:first-child{
     border-top: 1px solid #010101;
+}
+.light .nav-info .nav-item::before{
+    background-color:rgba(1, 1, 1, 0.5);
+    position: absolute;
+    left: 0;
+    top: calc(50%-12px);
+}
+.light .nav-social .nav-item::before{
+    background-color:rgba(1, 1, 1, 0.5);
+    position: absolute;
+    left: 0;
+    top: calc(50%-12px);
+}
+.light .project:hover{
+    border-bottom: 2px solid #010101;
+}
+.light .project-img{
+    width: 16px;
+    height: 12px;
+    display: block;
+    background-image:url(../img/Arrow\ 1.svg); 
+    margin-left: 15px;
+}
+.light .gradient{
+    background: linear-gradient(180deg, #E7E6E6 0%, rgba(231, 230, 230, 0) 100%);
+}
+.light .nav-tabs-item.ui-state-active .nav-tabs-link{
+    color: #010101;
+    border-bottom: 1px solid #010101;
+}
+.light .nav-tabs-link{
+    color: rgba(1, 1, 1, 0.4);
+}
+.light .work{
+    border-bottom: 1px solid #010101;
+}
+.light .advantages {
+    border-top: 1px solid #010101;
+}
+.light .advantages-image path{
+    fill: #010101;
+}
+.light .tech-item{
+    border-bottom: 1px solid rgba(1, 1, 1, 0.5);
+    border-right: 1px solid rgba(1, 1, 1, 0.5);
+}
+.light .html, .css, .js, .jquery{
+    border-top: 1px solid rgba(1, 1, 1, 0.5);
+}
+.light .html, .bootstrap{
+    border-left: 1px solid rgba(1, 1, 1, 0.5);
+}
+.light .tarif-item{
+    border-bottom: 1px solid #010101;
+}
+.light .tarif-description{
+    border-bottom: 1px solid #010101;
+}
+.light .tarif-title{
+    border-bottom: 1px solid #010101;
+}
+.light .form-item{
+    border-top: 1px solid #010101;
+    z-index: 3;
 }
 .wrapper{
     max-width: 1140px;
@@ -122,10 +250,6 @@ header{
     display: block;
     width: 1px;
     height: 24px;
-    background-color: rgba(243, 242, 240, 0.5);
-    position: absolute;
-    left: 0;
-    top: calc(50%-12px);
 }
 .nav-info .nav-item:first-child::before{
     display: none;
@@ -138,10 +262,6 @@ header{
     display: block;
     width: 1px;
     height: 24px;
-    background-color: rgba(243, 242, 240, 0.5);
-    position: absolute;
-    left: 0;
-    top: calc(50%-12px);
 }
 .nav-social .nav-item:first-child::before{
     display: none;
@@ -174,16 +294,6 @@ header{
     padding-bottom: 11px;
     transition: 0.2s border-bottom ease;
     border-bottom: 2px solid transparent;
-}
-.project:hover{
-    border-bottom: 2px solid #F3F2F0;
-}
-.project-img{
-    width: 16px;
-    height: 12px;
-    display: block;
-    background-image:url(../img/arrow.svg); 
-    margin-left: 15px;
 }
 .skill{
     display: flex;
@@ -265,7 +375,7 @@ header{
 }
 .about{
     display: grid;
-    grid-template: 290px / repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
 }
 .about-title{
     grid-column: 1/3;
@@ -322,9 +432,6 @@ header{
     position: relative;
     z-index: 1;
 }
-.gradient{
-    background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%); 
-}
 .section-portfolio{
     position: relative;
 }
@@ -355,12 +462,7 @@ header{
 .nav-tabs-link{
     border-bottom: 1px solid transparent;
     padding-bottom: 21px;
-    color: rgba(243, 242, 240, 0.5);
     text-decoration: none;
-}
-.nav-tabs-item.ui-state-active .nav-tabs-link{
-    color: #F3F2F0;
-    border-bottom: 1px solid #F3F2F0;
 }
 .nav-tabs-link:focus{
     outline: none;
@@ -368,7 +470,6 @@ header{
 .work{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #F3F2F0;
     padding-top: 62px;
     padding-bottom: 54px;
 }
@@ -428,7 +529,6 @@ header{
     display: grid;
     grid-template:1fr 1fr/repeat(3,1fr);
     grid-gap: 81px 22px;
-    border-top: 1px solid #F3F2F0;
     padding-top: 80px;
     margin-top: 78px;
 }
@@ -440,9 +540,6 @@ header{
     width: 40px;
     height: 40px;
     margin-right: 40px;
-}
-.advantages-image path{
-    fill: #F3F2F0;
 }
 .advantages .title-h3{
     margin-top: 0; 
@@ -461,16 +558,8 @@ header{
    text-align: center;
 }
 .tech-item{
-    border-bottom: 1px solid rgba(243, 242, 240, 0.3);
-    border-right: 1px solid rgba(243, 242, 240, 0.3);
     display: flex;
     justify-content: center;
-}
-.html, .css, .js, .jquery{
-    border-top: 1px solid rgba(243, 242, 240, 0.3);
-}
-.html, .bootstrap{
-    border-left: 1px solid rgba(243, 242, 240, 0.3);
 }
 .tech-image{
     filter: grayscale(100%);
@@ -478,6 +567,9 @@ header{
 }
 .tech-item:hover .tech-image{
     filter: grayscale(0);
+}
+.jquery .tech-image{
+    width: 72px;
 }
 .ui-tooltip{
     background-color: #E31B1B;
@@ -512,7 +604,6 @@ header{
     grid-template-columns: 1fr 1fr;
 }
 .tarif-item{
-    border-bottom: 1px solid #F3F2F0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -525,7 +616,6 @@ header{
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    border-bottom: 1px solid #F3F2F0;
     padding-top: 5px;
 }
 .tarif-title > div{
@@ -626,14 +716,12 @@ header{
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    border-bottom: 1px solid #F3F2F0;
     z-index: 0;
 }
 .form-description{
     font-size: 28px;
     line-height: 150%;
     opacity: 0.8;
-    border-bottom: 1px solid #F3F2F0;
     padding-bottom: 31px;
 }
 .form-item{
@@ -656,14 +744,23 @@ form label{
     margin-bottom: 10px;
     display: block;
 }
-form input{
+.dark form input{
     width: 100%;
     padding: 26px 20px 26px;
-    background-color: #38383A;
+    background-color: #E7E6E4;
     border: none;
     box-sizing: border-box;
     margin-bottom: 21px;
     color: #F3F2F0;
+}
+.light form input{
+    width: 100%;
+    padding: 26px 20px 26px;
+    background-color: #E7E6E4;
+    border: none;
+    box-sizing: border-box;
+    margin-bottom: 21px;
+    color: #010101;
 }
 form input:focus{
     outline: none;
@@ -687,8 +784,8 @@ form select{
 }
 .ui-selectmenu-button.ui-button{
     width: 100%;
-    background-color: #38383A;
-    color: #fff;
+    background-color: #E7E6E4;
+    color: #010101;
     padding: 25px 20px 25px;
     box-sizing: border-box;
     margin-bottom: 39px;
@@ -699,19 +796,22 @@ form select{
     outline: none;
 }
 .ui-selectmenu-menu .ui-menu{
-    background-color: #38383A;
-    color: rgba(243, 242, 240, 0.4);
+    background-color: #E7E6E4;
+    color: rgba(1, 1, 1, 0.5);
     font-size: 12px;
 }
 .ui-selectmenu-menu .ui-menu .ui-menu-item{
     padding: 10px 20px;
 }
 .ui-selectmenu-menu .ui-menu .ui-menu-item:hover{
-    color: rgba(243, 242, 240, 1);
+    color: rgba(1, 1, 1, 1);
     padding: 10px 20px;
 }
-footer{
+.dark footer{
     border-top: 1px solid #F3F2F0;
+}
+.light footer{
+    border-top: 1px solid #010101;
 }
 .footer-top{
     display: flex;
@@ -724,19 +824,35 @@ footer{
     padding-top: 43px;
     padding-bottom: 41px;
 }
-.footer-bottom p{
+.dark .footer-bottom p{
     margin: 0;
     color: rgba(243, 242, 240, 0.3);
     padding-top: px;
     padding-bottom: px;
 }
-.footer-link{
+.dark .footer-link{
     color: rgba(243, 242, 240, 0.3);
     border-bottom: 1px solid rgba(243, 242, 240, 0.3);
     transition: 0.2s ease;
     text-decoration: none;
 }
-.footer-link:hover{
+.dark .footer-link:hover{
     color: rgba(243, 242, 240, 1);
     border-bottom: 1px solid rgba(243, 242, 240, 1);
+}
+.light .footer-bottom p{
+    margin: 0;
+    color: rgba(1, 1, 1, 0.5);
+    padding-top: px;
+    padding-bottom: px;
+}
+.light .footer-link{
+    color: rgba(1, 1, 1, 0.5);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.5);
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+.light .footer-link:hover{
+    color: rgba(1, 1, 1, 1);
+    border-bottom: 1px solid rgba(1, 1, 1, 1);
 }
