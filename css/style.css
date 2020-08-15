@@ -72,10 +72,22 @@ body{
     border-bottom: 1px solid rgba(243, 242, 240, 0.3);
     border-right: 1px solid rgba(243, 242, 240, 0.3);
 }
-.dark .html, .css, .js, .jquery{
+.dark .html{
     border-top: 1px solid rgba(243, 242, 240, 0.3);
 }
-.dark .html, .bootstrap{
+.dark .css{
+    border-top: 1px solid rgba(243, 242, 240, 0.3);
+}
+.dark .js{
+    border-top: 1px solid rgba(243, 242, 240, 0.3);
+}
+.dark .jquery{
+    border-top: 1px solid rgba(243, 242, 240, 0.3);
+}
+.dark .html{
+    border-left: 1px solid rgba(243, 242, 240, 0.3);
+}
+.dark .bootstrap{
     border-left: 1px solid rgba(243, 242, 240, 0.3);
 }
 .dark .tarif-item{
@@ -91,6 +103,28 @@ body{
     border-top: 1px solid #F3F2F0;
     z-index: 3;
 }
+
+.dark .ui-selectmenu-menu .ui-menu{
+    background-color: #38383A;
+    color: rgba(243, 242, 240, 0.4);
+    font-size: 12px;
+}
+.dark .ui-selectmenu-menu .ui-menu .ui-menu-item:hover{
+    background-color: #38383A;
+    color: rgba(243, 242, 240, 1);
+    padding: 10px 20px;
+}
+.light .ui-selectmenu-menu .ui-menu{
+    background-color: #E7E6E4;
+    color: rgba(1, 1, 1, 0.5);
+    font-size: 12px;
+}
+.light .ui-selectmenu-menu .ui-menu .ui-menu-item:hover{
+    background-color: #E7E6E4;
+    color: rgba(1, 1, 1, 1);
+    padding: 10px 20px;
+}
+
 .light{
     background-color: #F3F2F0;
     color: #010101;
@@ -161,10 +195,22 @@ body{
     border-bottom: 1px solid rgba(1, 1, 1, 0.5);
     border-right: 1px solid rgba(1, 1, 1, 0.5);
 }
-.light .html, .css, .js, .jquery{
+.light .html{
     border-top: 1px solid rgba(1, 1, 1, 0.5);
 }
-.light .html, .bootstrap{
+.light .css{
+    border-top: 1px solid rgba(1, 1, 1, 0.5);
+}
+.light .js{
+    border-top: 1px solid rgba(1, 1, 1, 0.5);
+}
+.light .jquery{
+    border-top: 1px solid rgba(1, 1, 1, 0.5);
+}
+.light .html{
+    border-left: 1px solid rgba(1, 1, 1, 0.5);
+}
+.light .bootstrap{
     border-left: 1px solid rgba(1, 1, 1, 0.5);
 }
 .light .tarif-item{
@@ -747,7 +793,7 @@ form label{
 .dark form input{
     width: 100%;
     padding: 26px 20px 26px;
-    background-color: #E7E6E4;
+    background-color: #38383A;
     border: none;
     box-sizing: border-box;
     margin-bottom: 21px;
@@ -782,7 +828,16 @@ form input[type=submit]:hover{
 form select{
     width: 100%;
 }
-.ui-selectmenu-button.ui-button{
+.dark .ui-selectmenu-button.ui-button{
+    width: 100%;
+    background-color: #38383A;
+    color: #F3F2F0;
+    padding: 25px 20px 25px;
+    box-sizing: border-box;
+    margin-bottom: 39px;
+    border-radius: 0;
+}
+.light .ui-selectmenu-button.ui-button{
     width: 100%;
     background-color: #E7E6E4;
     color: #010101;
@@ -795,18 +850,10 @@ form select{
     border: none;
     outline: none;
 }
-.ui-selectmenu-menu .ui-menu{
-    background-color: #E7E6E4;
-    color: rgba(1, 1, 1, 0.5);
-    font-size: 12px;
-}
 .ui-selectmenu-menu .ui-menu .ui-menu-item{
     padding: 10px 20px;
 }
-.ui-selectmenu-menu .ui-menu .ui-menu-item:hover{
-    color: rgba(1, 1, 1, 1);
-    padding: 10px 20px;
-}
+
 .dark footer{
     border-top: 1px solid #F3F2F0;
 }
