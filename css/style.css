@@ -114,6 +114,10 @@ body{
     color: rgba(243, 242, 240, 1);
     padding: 10px 20px;
 }
+.dark option{
+    background-color: #38383A !important;
+    color: rgba(243, 242, 240, 0.4) !important;
+}
 .light .ui-selectmenu-menu .ui-menu{
     background-color: #E7E6E4;
     color: rgba(1, 1, 1, 0.5);
@@ -124,7 +128,10 @@ body{
     color: rgba(1, 1, 1, 1);
     padding: 10px 20px;
 }
-
+.light option{
+    background-color: #E7E6E4 !important;
+    color: rgba(1, 1, 1, 0.5) !important;
+}
 .light{
     background-color: #F3F2F0;
     color: #010101;
